@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS基础</h1>
+    <p>QiuZhihan - 2026101421 - JS基础学习</p>
+
+    <p>点击灯泡可以实现打开或关闭这盏灯</p>
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+    <script>
+        function changeImage(){
+            // alert('点击了灯泡');
+            const element = document.getElementById('myImage');
+            console.log(element);
+            if (element.src.includes("pic_bulboff.gif")){
+                element.src = "pic_bulbon.gif";
+                console.log("灯亮了");
+            }else{
+                element.src = "pic_bulboff.gif";
+                console.log("灯灭了");
+            }
+        }
+    </script>
+</body>
+</html>
